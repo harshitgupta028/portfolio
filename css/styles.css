@@ -54,8 +54,8 @@ p{
 
 .round{
   border-radius: 100%;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
 
 .btn {
@@ -145,7 +145,7 @@ p{
 }
 
 .middle-container{
-  padding-top: 100px;
+  padding: 100px 100px 0;
 }
 
 .bottom-container{
