@@ -52,6 +52,10 @@ p{
   margin: 0px 0 100px;
 }
 
+.round{
+  border-radius: 100%
+}
+
 .btn {
   background: #11cdd4;
   background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
