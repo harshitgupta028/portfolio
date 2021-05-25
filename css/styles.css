@@ -87,7 +87,7 @@ p{
 }
 
 .top-cloud{
-  position: absolute;
+  position: relative;
   height: 50px;
   width: 50px;
   top: 100px;
