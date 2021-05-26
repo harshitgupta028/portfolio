@@ -9,7 +9,7 @@ body{
 
 h1{
   font-size: 4.3rem; /* 16px = 100% = 1em */
-  margin: 70px auto 0 auto;
+  margin: 0 auto;
   font-family: 'Sacramento', cursive;
   color: #66BFBF;
 }
@@ -23,6 +23,7 @@ h2{
 h3{
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
+  padding-top: 20px;
   color: #11999E;
 }
 
@@ -36,7 +37,7 @@ hr{
   border-style: dotted none none;
   border-width: 0.4em;
   width: 4%;
-  margin: 100px auto;
+  margin: 15px auto 100px;
   border-color: #a9a9a9;
 }
 
@@ -88,39 +89,77 @@ p{
 
 .top-cloud{
   position: relative;
+  left: 440px;
   height: 150px;
-  width: 150px;
-  top: 100px;
   right: 250px;
+
 }
 
 .bottom-cloud{
-  position: absolute;
-  left: 280px;
-
+  position: relative;
+  left: 150px;
+  bottom: 400px;
+  height: 150px;
 }
 
 .mountain{
   position: relative;
+  height: 450px;
+  top: 10%;
+  right: 8.5%;
 }
 
-.skill-row{
-  margin: 80px auto 150px;
-  width: 50%;
+.education{
+  margin: 0 100px;
+  padding: 0 0 0.1px;
+}
+
+.education-row{
+  margin: 80px auto 100px;
+  width: 70%;
   text-align: left;
 }
 
-.com-img{
-  width: 25%;
+.skill-row{
+  margin: 80px auto 75px;
+  width: 80%;
+  text-align: left;
+}
+
+.oriental-img{
+  width: 155px;
   float: left;
   margin-right: 30px;
 }
 
-.pcb-img{
-  width: 25%;
+.miss-hill-img{
+  width: 157px;
   float: right;
   margin-left: 30px;
 }
+
+.sanskriti-img{
+  width: 157px;
+  float: left;
+  padding: 0 28px 0 0;
+  /* margin-left: 30px; */
+}
+
+
+.development-img{
+  width: 270px;
+  float: left;
+  margin-right: 30px;
+  padding: 70px 0;
+}
+
+.PCB-img{
+  width: 180px;
+  padding: 30px 59px;
+  float: left;
+  /* margin-left: 30px; */
+}
+
 
 .footer-link{
   color: #11999E;
@@ -142,12 +181,12 @@ p{
 
 .top-container{
   background-color: #E4F9F5;
-  position: relative;
-  padding-top: 85px;
+  padding-top: 65px;
+  height: 870px;
 }
 
 .middle-container{
-  padding: 100px 100px 0;
+  padding: 200px 100px 100px;
 }
 
 .bottom-container{
