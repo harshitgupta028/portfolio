@@ -72,6 +72,7 @@ p{
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   font-size: 20px;
+  margin-top: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
@@ -186,10 +187,18 @@ p{
 }
 
 .middle-container{
-  padding: 200px 100px 100px;
+  padding: 200px 100px 200px;
 }
 
 .bottom-container{
   background-color: #66BFBF;
   padding: 50px 0 20px;
+}
+
+.icons{
+  padding: 2px 20px 2px;
+}
+
+.icons:hover{
+  opacity: 0.2;
 }
