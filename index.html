@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Harshit Gupta - Web Designer</title>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
@@ -13,7 +15,7 @@
   <div class="top-container">
     <img class="top-cloud"src="Images/cloud.png" alt="cloud-image." />
       <h1>I'm Harshit.</h1>
-      <h2>a web designer.</h2>
+      <h2>a web developer.</h2>
     <img class="bottom-cloud" src="Images/cloud.png" alt="cloud-image.">
     <img class="mountain" src="Images/mountain.png" alt="mountain-image.">
   </div>
@@ -21,7 +23,7 @@
   <div class="middle-container">
     <img class="round" src="Images/Harshit.jpg" alt="harshit's image">
     <h3>Hey, There</h3>
-    <p>
+    <p class="spacing">
       I'm an independent web developer who is passionate about web development, I'm an undergraduate student, IoT enthusiast & self-learned programmer.
         I am eager to hear about potential career opportunities, so I would be pleased to chat about job openings in the engineering sphere.
     </p>
@@ -73,42 +75,116 @@
     <div class="skill-row">
       <img class="development-img" src="Images/development-la.png" alt="computer images">
       <h4>Design & Development</h4>
-      <p>Javascript</p>
+
       <p>Python</p>
+      <div class="container">
+        <div class="skills python"></div>
+      </div>
+
+      <p>Javascript</p>
+      <div class="container">
+        <div class="skills Javascript"></div>
+      </div>
+
       <p>HTML/CSS</p>
+      <div class="container">
+        <div class="skills html-css"></div>
+      </div>
+
       <p>Express.js</p>
+      <div class="container">
+        <div class="skills express"></div>
+      </div>
+
       <p>Node.js</p>
+      <div class="container">
+        <div class="skills node"></div>
+      </div>
+
       <p>MongoDB</p>
+      <div class="container">
+        <div class="skills mongo"></div>
+      </div>
+
     </div>
 
     <div class="skill-row">
       <img class="PCB-img" src="Images/PCB.png" alt="pcb image">
       <h4>Electronics</h4>
-      <p>Embedded C</p>
+
       <p>PCB Design</p>
+      <div class="container">
+        <div class="skills PCB"></div>
+      </div>
+
       <p>EasyEda</p>
+      <div class="container">
+        <div class="skills easyeda"></div>
+      </div>
+
+      <p>Embedded C</p>
+      <div class="container">
+        <div class="skills node embedded"></div>
+      </div>
+
       <p>Micro-controllers</p>
+      <div class="container">
+        <div class="skills micro"></div>
+      </div>
     </div>
   </div>
 
   <hr>
+  <div class="second-last-container"> <!--middle container added for padding -->
+
+    <h3>Projects</h3>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top " src="images/project-1.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Robotic Hand</h5>
+        <p class="card-text c-spacing">Research project on human hand.</p>
+        <a target="_blank" href="https://www.linkedin.com/feed/update/urn:li:activity:6615848272772853760/" class="btn btn-primary">See</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top " src="images/project-2.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Daily Journal</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">See</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top " src="images/project-1.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Breadboard Power Supply</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">See</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <hr> -->
 
   <div class="contact-me">
     <h3>Want to hire?</h3>
-    <a class="btn" href="mailto:harshit.28.sps@gmail.com">CONTACT ME</a>
+    <a class="c-btn" href="mailto:harshit.28.sps@gmail.com">CONTACT ME</a>
   </div>
 
   <div class="bottom-container">
-    <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-    <div class="elfsight-app-90927d32-31dd-425f-8ea7-261513980af0"></div> -->
-
+    <a class="icons" href=https://www.linkedin.com/in/harshit-gupta-38377117b/ target="_blank"><img src="https://img.icons8.com/color/37/000000/linkedin-circled--v3.png"/></a>
     <a class="icons" href=https://github.com/harshitg123/ target="_blank"><img src="https://img.icons8.com/material-sharp/37/000000/github.png"/></a>
-    <a class="icons" href=https://www.linkedin.com/in/harshit-gupta-38377117b/ target="_blank"><img src="https://img.icons8.com/ios-glyphs/37/000000/linkedin-circled--v1.png"/></a>
-    <a class="icons" href=https://github.com/harshitg123/harshit_profile/blob/main/Resume/Harshit_Gupta_Resume.pdf class="" target="_blank"><img src="https://img.icons8.com/material-rounded/37/000000/submit-resume.png"/></a>
+    <a class="icons" href=https://drive.google.com/file/d/1OXojjeFdVDWknr7BfxsjrH71URwBwhy0/view target="_blank"><img src="https://img.icons8.com/dotty/37/000000/submit-resume.png"/></a>
 
     <p class="copyright">© 2020 Harshit Gupta.</p>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
-
 </html>
