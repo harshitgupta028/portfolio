@@ -52,6 +52,8 @@ hr{
 }
 
 p{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1rem;
   line-height: 2;
   margin: 0 auto;
 }
@@ -218,7 +220,7 @@ p{
 
 .container {
   width: 450px;
-  height: 10px;
+  height: 6px;
   padding: 0;
   margin: 0;
   background-color: #ddd;
@@ -237,7 +239,7 @@ p{
 
 .Javascript {
   width: 70%;
-  height: 10px;
+  height: 6px;
   background-color: #005f99;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -245,7 +247,7 @@ p{
 
 .python {
   width: 80%;
-  height: 10px;
+  height: 6px;
   background-color:  #66BFBF;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -253,7 +255,7 @@ p{
 
 .html-css {
   width: 75%;
-  height: 10px;
+  height: 6px;
   background-color: #b39ceb;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -261,7 +263,7 @@ p{
 
 .express {
   width: 71%;
-  height: 10px;
+  height: 6px;
   background-color: #2196F3;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -269,7 +271,7 @@ p{
 
 .node {
   width: 68%;
-  height: 10px;
+  height: 6px;
   background-color: #FF449F;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -277,7 +279,7 @@ p{
 
 .mongo {
   width: 65%;
-  height: 10px;
+  height: 6px;
   background-color: #04AA6D;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -285,14 +287,14 @@ p{
 
 .embedded {
   width: 70%;
-  height: 10px;
+  height: 6px;
   background-color: #005f99;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 .PCB {
   width: 85%;
-  height: 10px;
+  height: 6px;
   background-color: #b39ceb;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -300,7 +302,7 @@ p{
 
 .easyeda {
   width: 80%;
-  height: 10px;
+  height: 6px;
   background-color: #FF449F;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -308,7 +310,7 @@ p{
 
 .micro{
   width: 68%;
-  height: 10px;
+  height: 6px;
   background-color: #2196F3;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -316,7 +318,6 @@ p{
 
 .spacing{
   margin-top: 25px;
-  font-size: 1.055rem;
 }
 
 .card{
@@ -341,4 +342,30 @@ p{
 
 .btn{
   margin: 12px 0 5px;
+}
+
+#navbar{
+  padding: 0 20px;
+  position: fixed;
+  z-index: 1;
+  top: -100px;
+  width: 100%;
+  transition: top 0.8s;
+ }
+
+.sign{
+  width: 22%;
+  position: relative;
+  right: 550px;
+  top: -2px
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
 }
