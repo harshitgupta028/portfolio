@@ -58,6 +58,10 @@ p{
   margin: 0 auto;
 }
 
+a{
+  text-decoration: none;
+}
+
 .contact-me{
   margin: 0 100px 100px;
 }
@@ -89,6 +93,7 @@ p{
 
 .c-btn:hover {
   background: #30e3cb;
+  color: white;
   background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
   background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
   background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
@@ -237,12 +242,27 @@ p{
   color: white;
 }
 
+
+.round-circle{
+  width: 13px;
+  height: 13px;
+  border-radius: 10px;
+  position: relative;
+  bottom: 5.7px;
+}
+
 .Javascript {
   width: 70%;
   height: 6px;
   background-color: #005f99;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+.round-Javascript{
+  background-color: #005f99;
+  position: relative;
+  left: 307px;
 }
 
 .python {
@@ -253,12 +273,24 @@ p{
   border-bottom-left-radius: 5px;
 }
 
+.round-python{
+  background-color:  #66BFBF;
+  position: relative;
+  left: 350px;
+}
+
 .html-css {
   width: 75%;
   height: 6px;
   background-color: #b39ceb;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+.round-html-css{
+  background-color: #b39ceb;
+  position: relative;
+  left: 335px;
 }
 
 .express {
@@ -269,12 +301,24 @@ p{
   border-bottom-left-radius: 5px;
 }
 
+.round-express{
+  background-color: #2196F3;
+  position: relative;
+  left: 317px;
+}
+
 .node {
   width: 68%;
   height: 6px;
   background-color: #FF449F;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+.round-node{
+  background-color: #FF449F;
+  position: relative;
+  left: 295px;
 }
 
 .mongo {
@@ -285,6 +329,12 @@ p{
   border-bottom-left-radius: 5px;
 }
 
+.round-mongo{
+  background-color: #04AA6D;
+  position: relative;
+  left: 290px;
+}
+
 .embedded {
   width: 70%;
   height: 6px;
@@ -292,12 +342,25 @@ p{
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+
 .PCB {
   width: 85%;
   height: 6px;
   background-color: #b39ceb;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+.round-PCB{
+  background-color: #b39ceb;
+  position: relative;
+  left: 380px;
+}
+
+.round-embedded{
+  background-color: #005f99;
+  position: relative;
+  left: 310px;
 }
 
 .easyeda {
@@ -308,12 +371,24 @@ p{
   border-bottom-left-radius: 5px;
 }
 
+.round-easyeda{
+  background-color: #FF449F;
+  position: relative;
+  left: 350px;
+}
+
 .micro{
   width: 68%;
   height: 6px;
   background-color: #2196F3;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+.round-micro{
+  background-color: #2196F3;
+  position: relative;
+  left: 295px;
 }
 
 .spacing{
@@ -353,11 +428,59 @@ p{
   transition: top 0.8s;
  }
 
-.sign{
+.nav-sign-size{
   width: 22%;
   position: relative;
   right: 550px;
   top: -2px
+}
+
+.nav-resume-size p{
+  display: inline-block;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.2rem;
+  padding: 3px 5px 20px;
+  color: black;
+  position: absolute;
+  top: 15px;
+  right: 135px;
+}
+
+.nav-resume-size:hover p{
+  border-bottom: 3px solid;
+  border-color: #66BFBF;
+}
+
+.nav-github-size p{
+  display: inline-block;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.2rem;
+  padding: 3px 5px 20px;
+  color: black;
+  position: absolute;
+  top: 15px;
+  right: 325px;
+}
+
+.nav-github-size:hover p{
+  border-bottom: 3px solid;
+  border-color: #66BFBF;
+}
+
+.nav-linkedin-size p{
+  display: inline-block;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.2rem;
+  padding: 3px 5px 20px;
+  color: black;
+  position: absolute;
+  top: 15px;
+  right: 230px;
+}
+
+.nav-linkedin-size:hover p{
+  border-bottom: 3px solid;
+  border-color: #66BFBF;
 }
 
 .zoom {
