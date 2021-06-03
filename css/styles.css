@@ -108,7 +108,6 @@ a{
   left: 440px;
   height: 150px;
   right: 250px;
-
 }
 
 .bottom-cloud{
@@ -491,4 +490,163 @@ a{
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5);
+}
+
+.c-cards{
+  width: 18rem;
+}
+
+@media (max-width: 974px){
+  .mountain{
+    height: 225px;
+  }
+}
+
+@media (max-width: 500px){
+
+  h1{
+    font-size: 4rem;
+  }
+  h2{
+    font-size: 1.3rem;
+  }
+  h4{
+    font-size: 1.3rem;
+  }
+  hr{
+    border-width: 0.3em;
+    width: 5%;
+  }
+
+  .top-container{
+    background-color: #E4F9F5;
+    padding-top: 65px;
+    height: 575px;
+  }
+  .mountain{
+    height: 225px;
+    width: 450px;
+    position: relative;
+    top: 3%;
+    right: 2%;
+  }
+
+  .top-cloud{
+    left: 172px;
+    right: 50px;
+    bottom: 10px;
+    height: 80px;
+  }
+
+  .bottom-cloud{
+    left: -153px;
+    bottom: 20px;
+    height: 80px;
+  }
+
+  #navbar{
+    height: 95px;
+  }
+
+  .nav-sign-size{
+    width: 50%;
+    position: relative;
+    right: -4px;
+    top: -13px
+  }
+
+  .nav-resume-size p{
+    top: 38px;
+    right: 115px;
+    padding: 8px 0;
+  }
+  .nav-github-size p{
+    top: 38px;
+    right: 315px;
+    padding: 8px 0;
+  }
+  .nav-linkedin-size p{
+    top: 38px;
+    right: 215px;
+    padding: 8px 0;
+  }
+
+  .education{
+    margin: 0 18px;
+    padding: 0 0 0.1px;
+  }
+
+  .oriental-img{
+    position: relative;
+    margin-right: 50px;
+    left: 80px;
+  }
+
+  .miss-hill-img{
+    position: relative;
+    margin-left: 100px;
+    right: 80px;
+  }
+  .sanskriti-img{
+    padding: 0 28px 13px 0;
+    margin: 0 75px 0;
+  }
+  .development-img{
+    margin-left: 80px;
+    padding: 10px 0 10px;
+    width: 200px;
+  }
+  .PCB-img{
+    width: 200px;
+    margin: 0 40px 0 75px;
+    padding: 0 26px 25px;
+  }
+  .container {
+    width: 200px;
+    left: 143px;
+    bottom: 20px;
+    border-radius: 5px;
+  }
+
+  .round-circle{
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+    position: relative;
+    bottom: 4.9px;
+  }
+  .round-Javascript{
+    left: 137px;
+  }
+  .round-python{
+    left: 155px;
+  }
+  .round-html-css{
+    left: 147px;
+  }
+  .round-express{
+    left: 135px;
+  }
+  .round-node{
+    left: 130px;
+  }
+  .round-mongo{
+    left: 127px;
+  }
+  .round-PCB{
+    left: 165px;
+  }
+
+  .round-embedded{
+    left: 138px;
+  }
+  .round-easyeda{
+    left: 150px;
+  }
+  .round-micro{
+    left: 129px;
+  }
+  .c-cards{
+    width: 15rem;
+  }
 }
