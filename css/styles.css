@@ -504,6 +504,10 @@ a{
 
 @media (max-width: 500px){
 
+  body{
+    width: 465px;
+  }
+
   h1{
     font-size: 4rem;
   }
@@ -516,32 +520,6 @@ a{
   hr{
     border-width: 0.3em;
     width: 5%;
-  }
-
-  .top-container{
-    background-color: #E4F9F5;
-    padding-top: 65px;
-    height: 575px;
-  }
-  .mountain{
-    height: 225px;
-    width: 450px;
-    position: relative;
-    top: 3%;
-    right: 2%;
-  }
-
-  .top-cloud{
-    left: 172px;
-    right: 50px;
-    bottom: 10px;
-    height: 80px;
-  }
-
-  .bottom-cloud{
-    left: -153px;
-    bottom: 20px;
-    height: 80px;
   }
 
   #navbar{
@@ -571,8 +549,33 @@ a{
     padding: 8px 0;
   }
 
+  .top-container{
+    padding-top: 65px;
+    height: 575px;
+  }
+  .mountain{
+    height: 225px;
+    width: 450px;
+    position: relative;
+    top: 3%;
+    right: 2%;
+  }
+
+  .top-cloud{
+    left: 150px;
+    right: 50px;
+    bottom: 10px;
+    height: 80px;
+  }
+
+  .bottom-cloud{
+    left: -148px;
+    bottom: 20px;
+    height: 80px;
+  }
+
   .education{
-    margin: 0 18px;
+    margin: 0 10px;
     padding: 0 0 0.1px;
   }
 
