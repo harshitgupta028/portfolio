@@ -157,7 +157,6 @@ a{
   width: 157px;
   float: left;
   padding: 0 28px 0 0;
-  /* margin-left: 30px; */
 }
 
 
@@ -496,13 +495,92 @@ a{
   width: 18rem;
 }
 
-@media (max-width: 974px){
+@media screen and (max-width: 800px) and (min-width: 381px){
+  body{
+    position: relative;
+    width: 1110px;
+  }
+  h1{
+    font-size: 6rem;
+    margin-top: 50px;
+  }
+  h2{
+    margin-top: 10px;
+    font-size: 2rem;
+  }
   .mountain{
-    height: 225px;
+    height: 440px;
+    width: 940px;
+    position: relative;
+    top: -0.5px;
+    right: 10px;
+  }
+
+  .top-cloud{
+    left: 350px;
+    bottom: -30px;
+    height: 120px;
+  }
+
+  .bottom-cloud{
+    left: -300px;
+    bottom: 30px;
+    height: 120px;
+  }
+
+  #navbar{
+    height: 100px;
+  }
+
+  .nav-sign-size{
+    width: 40%;
+    position: absolute;
+    left: -20px;
+    top: -10px;
+  }
+
+  .nav-resume-size p{
+    top: 25px;
+    font-size: 1.4rem;
+    right: 115px;
+    padding: 7px 0 20px;
+  }
+  .nav-github-size p{
+    top: 25px;
+    font-size: 1.4rem;
+    right: 315px;
+    padding: 7px 0 20px;
+  }
+  .nav-linkedin-size p{
+    top: 25px;
+    font-size: 1.4rem;
+    right: 215px;
+    padding: 7px 0 20px 0;
+  }
+  .top-container{
+    padding-top: 65px;
+    height: 966px;
+  }
+  .education{
+    margin: 0 5px;
+    padding: 0 0 0.1px;
+  }
+  .development-img{
+    padding: 50px 0;
+    width: 250px;
+  }
+  .PCB-img{
+    width: 200px;
+    margin: 0 55px 0 25px;
+    padding: 0 26px 25px;
+  }
+  .container {
+    position: relative;
+    left: 440px;
   }
 }
 
-@media (max-width: 500px){
+@media (max-width: 380px){
 
   body{
     width: 465px;
