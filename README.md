@@ -1,8 +1,8 @@
 # Portfolio - Web Developer
 
 
-<p align="center">
+<p align="left">
   <img height="200" width="200" src="Images/harshit-circular.png" />
 </p>
 
-Visit my profile: https://harshitg123.github.io/harshit_profile/
+<p align="left"> Visit my profile: <a href="https://harshitg123.github.io/harshit_profile/" /> HARSHIT GUPTA </p>
