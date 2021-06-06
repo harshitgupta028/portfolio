@@ -405,9 +405,9 @@ a{
   line-height: 1.5;
 }
 
-.c-spacing{
+/* .c-spacing{
   padding: 10px 0 39px;
-}
+} */
 
 .card-title{
   width: 103%;
@@ -493,6 +493,29 @@ a{
 
 .c-cards{
   width: 18rem;
+}
+
+.fa-stack-overflow{
+  position: relative;
+  top: 6px;
+  color: #222426;
+}
+
+.c-style{
+  margin-bottom: 25px;
+}
+
+.eda{
+  width: 45px;
+  height: 45px;
+}
+
+.icon{
+  padding: 2px 4px 2px 10px;
+}
+
+.icon:hover{
+  opacity: 0.2;
 }
 
 @media screen and (max-width: 800px) and (min-width: 381px){
