@@ -47,7 +47,7 @@ hr{
   border-style: dotted none none;
   border-width: 0.4em;
   width: 4%;
-  margin: 15px auto 100px;
+  margin: 15px auto 150px;
   border-color: #a9a9a9;
 }
 
@@ -63,7 +63,8 @@ a{
 }
 
 .contact-me{
-  margin: 0 100px 100px;
+  margin: 0 100px 150px;
+  padding-bottom: 50px;
 }
 
 .round{
@@ -125,7 +126,7 @@ a{
 }
 
 .education{
-  margin: 0 100px;
+  margin: 0 100px 100px;
   padding: 0 0 0.1px;
 }
 
@@ -210,7 +211,7 @@ a{
 }
 
 .second-last-container{
-  margin: 0 100px 100px;
+  margin: 0 100px 250px;
 }
 
 .icons{
@@ -405,10 +406,6 @@ a{
   line-height: 1.5;
 }
 
-/* .c-spacing{
-  padding: 10px 0 39px;
-} */
-
 .card-title{
   width: 103%;
 }
@@ -481,18 +478,15 @@ a{
   border-color: #66BFBF;
 }
 
-.zoom {
+.c-cards{
+  width: 18rem;
   transition: transform .2s;
 }
 
-.zoom:hover {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5);
-}
-
-.c-cards{
-  width: 18rem;
+.c-cards:hover{
+  -ms-transform: scale(1.050);
+  -webkit-transform: scale(1.050);
+  transform: scale(1.050);
 }
 
 .fa-stack-overflow{
@@ -502,7 +496,8 @@ a{
 }
 
 .c-style{
-  margin-bottom: 25px;
+  margin-bottom: 100px;
+
 }
 
 .eda{
@@ -516,6 +511,40 @@ a{
 
 .icon:hover{
   opacity: 0.2;
+}
+
+.fa-hackerrank{
+  position: relative;
+  top: 7px;
+  color: black;
+}
+
+.university{
+  position: absolute;
+  top: 1780px;
+  right: 1px;
+  width: 1525px;
+  height: 840px;
+  opacity: 0.12;
+}
+
+.project-back{
+  position: absolute;
+  width: 1515px;
+  height: 1000px;
+  right: 2px;
+  top: 4050px;
+  -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+  filter: blur(2px);
+}
+
+
+.footer-msg{
+  font-size: 1.2rem;
+}
+
+.c-bold{
+  font-weight: bold;
 }
 
 @media screen and (max-width: 800px) and (min-width: 381px){
@@ -600,6 +629,15 @@ a{
   .container {
     position: relative;
     left: 440px;
+  }
+  .university{
+    position: absolute;
+    width: 1109px;
+    top: 1900px;
+    left: 0px;
+  }
+  .project-back{
+    display: none;
   }
 }
 
@@ -752,5 +790,11 @@ a{
   }
   .c-cards{
     width: 15rem;
+  }
+  .university{
+    display: none;
+  }
+  .project-back{
+    display: none;
   }
 }
