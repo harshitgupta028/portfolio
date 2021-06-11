@@ -489,6 +489,19 @@ a{
   transform: scale(1.050);
 }
 
+.c-button{
+  border-radius: 1px;
+  border: 1px solid black;
+  background-color: transparent;
+  color: black;
+}
+
+.c-button:hover{
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+}
+
 .fa-stack-overflow{
   position: relative;
   top: 6px;
