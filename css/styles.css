@@ -623,19 +623,25 @@ a{
   .nav-resume-size p{
     top: 25px;
     font-size: 1.4rem;
-    right: 115px;
+    right: 100px;
+    padding: 7px 0 20px;
+  }
+  .nav-blog-size p{
+    top: 25px;
+    font-size: 1.4rem;
+    right: 400px;
     padding: 7px 0 20px;
   }
   .nav-github-size p{
     top: 25px;
     font-size: 1.4rem;
-    right: 315px;
+    right: 300px;
     padding: 7px 0 20px;
   }
   .nav-linkedin-size p{
     top: 25px;
     font-size: 1.4rem;
-    right: 215px;
+    right: 200px;
     padding: 7px 0 20px 0;
   }
   .top-container{
