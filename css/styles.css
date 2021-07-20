@@ -446,7 +446,7 @@ a{
   border-color: #66BFBF;
 }
 
-.nav-blog-size{
+.nav-blog-size p{
   display: inline-block;
   font-family: 'Shadows Into Light', cursive;
   font-size: 1.2rem;
@@ -457,7 +457,7 @@ a{
   right: 425px;
 }
 
-.nav-blog-size:hover{
+.nav-blog-size:hover p{
   border-bottom: 3px solid;
   border-color: #66BFBF;
 }
