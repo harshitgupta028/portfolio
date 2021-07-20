@@ -626,12 +626,14 @@ a{
     right: 100px;
     padding: 7px 0 20px;
   }
+
   .nav-blog-size p{
     top: 25px;
     font-size: 1.4rem;
     right: 400px;
     padding: 7px 0 20px;
   }
+
   .nav-github-size p{
     top: 25px;
     font-size: 1.4rem;
@@ -707,19 +709,26 @@ a{
     top: -13px
   }
 
-  .nav-resume-size p{
+  .nav-blog-size p{
     top: 38px;
-    right: 115px;
+    right: 360px;
     padding: 8px 0;
   }
+
   .nav-github-size p{
     top: 38px;
-    right: 315px;
+    right: 275px;
     padding: 8px 0;
   }
   .nav-linkedin-size p{
     top: 38px;
-    right: 215px;
+    right: 175px;
+    padding: 8px 0;
+  }
+
+  .nav-resume-size p{
+    top: 38px;
+    right: 75px;
     padding: 8px 0;
   }
 
