@@ -446,6 +446,22 @@ a{
   border-color: #66BFBF;
 }
 
+.nav-blog-size{
+  display: inline-block;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.2rem;
+  padding: 3px 5px 20px;
+  color: black;
+  position: absolute;
+  top: 15px;
+  right: 425px;
+}
+
+.nav-blog-size:hover{
+  border-bottom: 3px solid;
+  border-color: #66BFBF;
+}
+
 .nav-github-size p{
   display: inline-block;
   font-family: 'Shadows Into Light', cursive;
