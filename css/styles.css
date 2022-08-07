@@ -406,6 +406,10 @@ a{
   line-height: 1.5;
 }
 
+.rak-space{
+  width: 101%;
+}
+
 .card-title{
   width: 103%;
 }
