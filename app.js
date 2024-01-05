@@ -1,13 +1,24 @@
+const navMenu = document.getElementById("nav-menu"),
+      navToggle = document.getElementById("nav-toggle"),
+      navClose = document.getElementById("nav-close") 
 
-window.onscroll = ()=> {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-    document.getElementById("navbar").style.top = "0";
-    if (document.documentElement.scrollTop > 1784){
-      console.log("Education");
-    }
-  } else {
-    document.getElementById("navbar").style.top = "-100px";
-  }
+if(navToggle){
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.add("show-menu")
+  })
+} 
+
+if(navClose){
+  navClose.addEventListener("click", () =>{
+    navMenu.classList.remove("show-menu")
+  })
 }
+
+const navLink = document.querySelectorAll(".nav__link")
+
+function linkAction() {
+  navMenu.classList.remove("show-menu")
+}
+
+navLink.forEach(n => n.addEventListener('click', linkAction))
