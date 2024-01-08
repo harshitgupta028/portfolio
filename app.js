@@ -100,5 +100,56 @@ function scrollHeader(){
     )
   }
 
-
 window.addEventListener("scroll", scrollHeader)
+
+
+// Show scroll up button
+
+function scrollUp(){
+  const scrollButton = document.getElementById("scroll-up")
+
+  if (this.scrollY > 500) {
+    scrollButton.classList.add("scrollup__show")
+  } else {
+    scrollButton.classList.remove("scrollup__show")
+  }
+}
+
+window.addEventListener("scroll", scrollUp)
+
+
+// Dark theme
+
+const themeButton = document.getElementById("theme-button")
+const darkTheme = 'dark-theme'
+const darkThemeIcon = 'uil-sun'
+const lightThemeIcon = 'uil-moon'
+
+const isActiveTheme = localStorage.getItem('active-theme')
+
+if(isActiveTheme === 'Dark'){
+  document.body.classList.add(darkTheme)
+  themeButton.classList.add(darkThemeIcon)
+}else{
+  document.body.classList.remove(darkTheme)
+  themeButton.classList.remove(darkThemeIcon)
+  themeButton.classList.add(lightThemeIcon)
+}
+
+function checkActivetheme(){
+
+  if(document.body.className.match('dark-theme')){
+    return "Dark"
+  }else{
+    return "Light"
+  }
+}
+
+themeButton.addEventListener('click', () => {
+
+
+  document.body.classList.toggle(darkTheme)
+  themeButton.classList.toggle(darkThemeIcon)
+
+    localStorage.setItem('active-theme', checkActivetheme())
+})
