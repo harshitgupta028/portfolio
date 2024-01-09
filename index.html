@@ -4,233 +4,490 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
+
   <title>Harshit Gupta</title>
-  <script src="https://use.fontawesome.com/5d7b702657.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <!-- Css style sheet -->
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
-  <nav id="navbar" class="navbar bg-light">
-    <a href="index.html"> <img class="nav-sign-size" src="Images/signature.png" alt="signature"> </a>
-    <a class="sign nav-blog-size" target="_blank" href="https://www.harshitgupta.co.in/"><p>Blogs</p></a>
-    <a class="sign nav-github-size" target="_blank" href="https://github.com/harshitg123/"><p>Github</p></a>
-    <a class="sign nav-linkedin-size" target="_blank" href="https://www.linkedin.com/in/harshit-gupta-38377117b/"><p>Linkedin</p></a>
-    <a class="sign nav-resume-size" target="_blank" href="https://drive.google.com/file/d/1Cd_bWYADrw6Yz6AnGh2BYwZHkPdoKA3B/view?usp=sharing"><p>Resume</p></a>
-  </nav>
-
+  <!-- Unicons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 
 <body>
-  <div class="top-container container-fluid">
-    <img class="top-cloud"src="Images/cloud.png" alt="cloud-image." />
-      <h1>I'm Harshit.</h1>
-      <h2>a web developer & budding youtuber.</h2>
-    <img class="bottom-cloud" src="Images/cloud.png" alt="cloud-image.">
-    <img class="mountain" src="Images/mountain.png" alt="mountain-image.">
-  </div>
 
-  <div class="middle-container">
-    <img class="round" src="Images/Harshit.jpg" alt="harshit's image">
-    <h3>Hey, There</h3>
-    <p class="spacing">
-      I'm an independent web developer who is passionate about web development, I'm an undergraduate student, IoT enthusiast & self-learned programmer.
-        I am eager to hear about potential career opportunities, so I would be pleased to chat about job openings in the engineering sphere.
-    </p>
-  </div>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Harshit</a>
 
-    <hr>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class="uil uil-estate nav__icon"></i> Home
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link"> 
+              <i class="uil uil-user nav__icon"></i> About
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class="uil uil-file-alt nav__icon"></i> Skills
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#qualifications" class="nav__link">
+              <i class="uil uil-briefcase-alt nav__icon"></i> Qualifications
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">
+              <i class="uil uil-scenery nav__icon"></i> Portfolio
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <i class="uil uil-message nav__icon"></i> Contactme
+            </a>
+          </li>
+        </ul>
+        <i class="uil uil-times nav__close" id="nav-close"></i>
+      </div>
 
-<!--- EDUCATION --->
+      <div class="nav__btns">
 
-  <div class="education">
-    <h1>Education</h1>
-    <img class="university" src="Images/university.jpg" alt="">
-    <div class="education-row">
-      <img class="oriental-img" src="Images/logo.png" alt="computer images">
-      <h4>Electronics & Communication Engineering</h4>
-      <p class="c-bold">
-        Pursuing B.Tech from Oriental Institute of Science and Technology, Bhopal M.P,
-        I am in third year of my engineering with the score of 8.59/10 C.G.P.A.
-      </p>
-    </div>
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-    <div class="education-row">
-      <img class="miss-hill-img" src="Images/miss hill.png" alt="pcb image">
-      <h4>Higher Secondary Education</h4>
-      <p class="c-bold">
-        I have completed my higher secondary education in 2018, from Miss Hill Higher
-        Secondary school, Gwalior M.P with a score of 76.4 percentile.
-      </p>
-    </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <div class="education-row">
-      <img class="sanskriti-img" src="Images/sanskriti.jfif">
-      <h4>High School Education</h4>
-      <p class="c-bold">
-        I have completed my high school education in 2016, from sanskriti public
-        school, Karera M.P with a score of 9.6/10 C.G.P.A.
-      </p>
-    </div>
-  </div>
+  <main class="main">
 
-  <hr>
+    <!-- Home -->
 
-<!--- SKILLS --->
+    <section class="home section" id="home">
+      <div class="container home__container grid">
+        <div class="home__content grid">
+          
+          <div href="" class="home__social">
+            <a href="https://www.linkedin.com/in/harshit-gupta-38377117b/" target="_blank" class="home__social-icon">
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
 
-  <div class="education">
+            <a href="https://github.com/harshitg123" target="_blank" class="home__social-icon">
+              <i class="uil uil-github-alt"></i>
+            </a>
+          </div>
 
-    <h1>Skills</h1>
+          <div class="home__img">
+            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <mask id="mask0" mask-type="alpha">
+                  <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                  130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                  97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                  0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+              </mask>
+              <g mask="url(#mask0)">
+                  <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                  165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                  129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                  -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
 
-    <div class="skill-row">
-      <img class="development-img" src="Images/development-la.png" alt="computer images">
-      <h4>Design & Development</h4>
+                  <image class="home__blob-img" x=0 y=20 href="img/harshit.png"/>
 
-      <p>Python</p>
-      <div title="80%" class="container">
-        <div class="skills python">
-          <div class="round-circle round-python">
+              </g>
+          </svg>
+          </div>
 
+          <div class="home__data">
+            <h1 class="home__title">Hi, I'm Harshit</h1>
+            <h3 class="home__subtitle">Fullstack developer</h3>
+            <p class="home__description">
+              Mid level experience in Web development, delevering quality work.
+            </p>
+            <a href="#contact" class="button button--flex">
+              Contact me <i class="uil uil-message button__icon"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="home__scroll">
+          <a href="#about" class="home__scroll-button button--flex">
+            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+            <span class="home__scroll-name">Scroll down</span>
+            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+          </a>
+      </div>
+
+    </section>
+
+    <!-- About -->
+
+    <section class="about section" id="about">
+      <h2 class="section__title">About Me</h2>
+      <span class="section__subtitle">My introduction</span>
+
+      <div class="about__container container grid">
+        <img src="img/about.png" alt="" class="about__img">
+
+        <div class="about__data">
+          <p class="about__description">Fullstack developer, with extensive knowledge and years of experience, working in fullstack technologies, delevering quality work.</p>
+
+          <div class="about__info">
+            <div>
+              <span class="about__info-title">01+</span>
+              <span class="about__info-name">Years <br> experience</span>
+            </div>
+
+            <div>
+              <span class="about__info-title">03+</span>
+              <span class="about__info-name">Completed <br> projects</span>
+            </div>
+
+            <div>
+              <span class="about__info-title">01</span>
+              <span class="about__info-name">Company <br> worked</span>
+            </div>
+          </div>
+
+          <div class="about__buttons">
+            <a download="" href="files/Resume_harshit_gupta.pdf" class="button button--flex">
+              Download Resume<i class="uil uil-download-alt button__icon"></i>
+            </a>
           </div>
         </div>
       </div>
+    </section>
 
-      <p>Javascript</p>
-      <div title="70%" class="container">
-        <div class="skills Javascript"> <div class="round-circle round-Javascript"> </div> </div>
+    <!-- Skills -->
+
+    <section class="section skills" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <span class="section__subtitle">My technical level</span>
+
+      <div class="skills__container container grid">
+
+        <div class="skills__content skills__open">
+          <div class="skills__header">
+            <i class="uil uil-brackets-curly skills__icon"></i>
+
+            <div>
+              <h1 class="skills_title">Frontend developer</h1>
+              <span class="skills__subtitle">More than 1 years</span>
+            </div>
+
+            <i class="uil uil-angle-down skills__down skills__arrow"></i>
+          </div>
+
+          <div class="skills__list grid">
+            
+            <div class="skills__data">
+              <div class="skills__title">
+                <h3 class="skills__name">HTML</h3>
+                <span class="skills_number">80%</span>
+              </div>
+
+              <div class="skills__bar">
+                <span class="skills__percentage skills__html"></span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__title">
+                <h3 class="skills__name">CSS</h3>
+                <span class="skills_number">70%</span>
+              </div>
+
+              <div class="skills__bar">
+                <span class="skills__percentage skills__css"></span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__title">
+                <h3 class="skills__name">Javascript</h3>
+                <span class="skills_number">40%</span>
+              </div>
+
+              <div class="skills__bar">
+                <span class="skills__percentage skills__js"></span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="skills__content skills__close">
+          
+          <div class="skills__header">
+            <i class="uil uil-server-network skills__icon"></i>
+
+            <div>
+              <h1 class="skills_title">Backend developer</h1>
+              <span class="skills__subtitle">More than 1 years</span>
+            </div>
+
+            <i class="uil uil-angle-down skills__down skills__arrow"></i>
+          </div>
+
+          <div class="skills__list grid">
+      
+            <div class="skills__data">
+              <div class="skills__title">
+                <h3 class="skills__name">Java</h3>
+                <span class="skills_number">60%</span>
+              </div>
+
+              <div class="skills__bar">
+                <span class="skills__percentage skills__java"></span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__title">
+                <h3 class="skills__name">Spring Boot</h3>
+                <span class="skills_number">50%</span>
+              </div>
+
+              <div class="skills__bar">
+                <span class="skills__percentage skills__spring-boot"></span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__title">
+                <h3 class="skills__name">Python</h3>
+                <span class="skills_number">70%</span>
+              </div>
+
+              <div class="skills__bar">
+                <span class="skills__percentage skills__python"></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
+    </section>
 
-      <p>HTML/CSS</p>
-      <div title="75%" class="container">
-        <div class="skills html-css"> <div class="round-circle round-html-css"> </div> </div>
+    <!-- Education -->
+
+    <section class="section qualification" id="qualifications">
+      <h2 class="section__title">Qualification</h2>
+      <span class="section__subtitle">My journey</span>
+
+      <div class="qualification__container container">
+        <div class="qualification__tabs">
+          <div class="qualification__button button--flex" data-target="#education">
+            <i class="uil uil-graduation-cap qualification__icon"></i>
+            Education
+          </div>
+
+          <div class="qualification__button button--flex qualification__active" data-target="#work">
+            <i class="uil uil-briefcase-alt qualification__icon"></i>
+            Work
+          </div>
+        </div>
+        
+        <div class="qualification__section">
+
+          <!-- Education -->
+          <div class="qualification__content" data-content id="education">
+
+            <data class="qualtifaction__data">
+              
+              <div>
+                <h3 class="qualification__title">Electronics and Communication</h3>
+                <span class="qualification__subtitle">India - Oriental Institute of Science and Technology</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2018 - 2022
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </data>
+
+            <data class="qualtifaction__data">
+
+              <div></div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+
+              <div>
+                <h3 class="qualification__title">Senior Secondary Education</h3>
+                <span class="qualification__subtitle">India - Miss Hill Higher Secondary School</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2017 - 2018
+                </div>
+              </div>
+            </data>
+
+            <data class="qualtifaction__data">
+              <div>
+                <h3 class="qualification__title">Secondary Education</h3>
+                <span class="qualification__subtitle">India - Sanskriti Public School</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2015 - 2016
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <!-- <span class="qualification__line"></span> -->
+              </div>
+            </data>
+
+          </div>
+
+          <!-- Work -->
+          <div class="qualification__content qualification__active" data-content id="work">
+
+            <data class="qualtifaction__data">
+              <div>
+                <h3 class="qualification__title">Product Engineer</h3>
+                <span class="qualification__subtitle">Tata Consultancy Services - India</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2022 - Present
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </data>
+
+            <data class="qualtifaction__data">
+              
+              <div></div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <!-- <span class="qualification__line"></span> -->
+              </div>
+
+              <div>
+                <h3 class="qualification__title">Product Intern</h3>
+                <span class="qualification__subtitle">Tata Consultancy Services - India</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  Jan 2022 - May 2022
+                </div>
+              </div>
+            </data>
+
+          </div>
+
+        </div>
+
       </div>
+    </section>
 
-      <p>Express.js</p>
-      <div title="71%" class="container">
-        <div class="skills express"> <div class="round-circle round-express"> </div> </div>
+    <!-- Projects -->
+
+    <!-- Contact Me -->
+    <section class="section contact" id="contact">
+      <h2 class="section__title">Contact Me</h2>
+      <span class="section__subtitle">Get in touch</span>
+
+      <div class="contact__container container grid">
+        <div>
+          
+          <div class="contact__information">
+            <i class="uil uil-phone contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Call Me</h3>
+              <span class="contact__subtitle">+91 6266478162</span>
+            </div>
+          </div>
+
+          <div class="contact__information">
+            <i class="uil uil-envelope contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Email Me</h3>
+              <span class="contact__subtitle">harshitofficial28@gmail.com</span>
+            </div>
+          </div>
+
+        </div>
+
+        <form action="" class="contact__form grid">
+          <div class="contact__inputs grid">
+            <div class="contact__content">
+              <label for="" class="contact__label">Name</label>
+              <input type="text" class="contact__input">
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Email</label>
+              <input type="email" class="contact__input">
+            </div>
+          </div>
+          <div class="contact__content">
+            <label for="" class="contact__label">Subject</label>
+            <input type="text" class="contact__input">
+          </div>
+          <div class="contact__content">
+            <label for="" class="contact__label">Message</label>
+            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+          </div>
+
+          <div>
+            <a href="#" class="button button--flex">
+              Send Message <i class="uil uil-message button__icon"></i>
+            </a>
+          </div>
+        </form>
       </div>
+    </section>
+  </main>
 
-      <p>Node.js</p>
-      <div title="68%" class="container">
-        <div class="skills node"> <div class="round-circle round-node"> </div> </div>
+  <footer class="footer">
+    <div class="footer__bg">
+      <div class="footer__container container grid">
+        <div>
+          <h1 class="footer__title">Harshit</h1>
+          <span class="footer__subtitle">Fullstack developer</span>
+        </div>
+
+        <ul class="footer__links">
+          <li>
+            <a href="#portfolio" class="footer__link">Portfolio</a>
+          </li>
+          <li>
+            <a href="#skills" class="footer__link">Skills</a>
+          </li>
+          <li>
+            <a href="#contact" class="footer__link">Contact me</a>
+          </li>
+        </ul>
       </div>
-
-      <p>MongoDB</p>
-      <div title="65%" class="container">
-        <div class="skills mongo"> <div class="round-circle round-mongo"> </div> </div>
-      </div>
-
+      <p class="footer__rights">Made with ❤️ by Harshit</p>
     </div>
+  </footer>
 
-    <div class="skill-row">
-      <img class="PCB-img" src="Images/PCB.png" alt="pcb image">
-      <h4>Electronics</h4>
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+  </a>
 
-      <p>PCB Design</p>
-      <div title="85%"class="container">
-        <div class="skills PCB"> <div class="round-circle round-PCB"> </div> </div>
-      </div>
-
-      <p>EasyEda</p>
-      <div title="80%" class="container">
-        <div class="skills easyeda"> <div class="round-circle round-easyeda"> </div> </div>
-      </div>
-
-      <p>Embedded C</p>
-      <div title="70%" class="container">
-        <div class="skills node embedded"> <div class="round-circle round-embedded"> </div> </div>
-      </div>
-
-      <p>Micro-controllers</p>
-      <div title="68%" class="container">
-        <div class="skills micro"> <div class="round-circle round-micro"> </div> </div>
-      </div>
-    </div>
-  </div>
-
-  <hr>
-
-  <div class="second-last-container"> <!--middle container added for padding -->
-    <h1 class="c-style">Projects</h1>
-
-    <img class="project-back" src="Images/project-back.jpg" alt="">
-
-    <div class="card c-cards">
-      <img class="card-img-top " src="Images/project-1.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Robotic Hand</h5>
-        <p class="card-text c-spacing">Robotic hand developed after small research on human hand anatomy.</p>
-        <a target="_blank" href="https://www.linkedin.com/feed/update/urn:li:activity:6615848272772853760/" class="c-button btn btn-primary">More Details</a>
-      </div>
-    </div>
-
-    <div class="card c-cards">
-      <img class="card-img-top " src="Images/project-2.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Tech Journal</h5>
-        <p class="card-text">Blogging application for posting projects & technical blogs.</p>
-        <a target="_blank" href="https://www.harshitgupta.co.in/" class="c-button btn btn-primary">More Details</a>
-      </div>
-    </div>
-
-    <div class="card c-cards">
-      <img class="card-img-top " src="Images/pro-pcb.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Breadboard Power Supply</h5>
-        <p class="card-text">PCB for breadboard to supply power (Independent from batteries).</p>
-        <a target="_blank" href="https://oshwlab.com/harshit.28.sps/bread-bord-power-supply" class="c-button btn btn-primary">More Details</a>
-      </div>
-    </div>
-
-    <div class="card c-cards">
-      <img class="card-img-top " src="Images/PCB-home automation.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Home Automation</h5>
-        <p class="card-text">PCB for controling upto 4 electronics appliance over the internet using (IoT).</p>
-        <a target="_blank" href="https://oshwlab.com/harshit.28.sps/alexa-home-automation" class="c-button btn btn-primary">More Details</a>
-      </div>
-    </div>
-
-    <div class="card c-cards">
-      <img class="card-img-top " src="Images/Rakshak.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Rakshak</h5>
-        <p class="card-text rak-space">Home security system, Will notify owner if intruder try's to break through door & window.</p>
-        <a target="_blank" href="https://drive.google.com/file/d/1Dq2CXmB3CZPoQoICH-XJrQmteRCFo1b-/view?usp=sharing" class="c-button btn btn-primary">More Details</a>
-      </div>
-    </div>
-
-    <a href="https://www.harshitgupta.co.in/"><button class="btn custom-btn" type="button" name="button"> See More....</button></a>
-
-  </div>
-
-  <!-- <hr> -->
-
-  <div class="contact-me">
-    <h3>Want to hire?</h3>
-    <a class="c-btn" href="mailto:harshitofficial28@gmail.com">CONTACT ME</a>
-  </div>
-
-  <div class="bottom-container">
-
-    <h3 class="footer-msg" >Find me on social media platforms</h3>
-
-    <a class="icons" href="https://www.linkedin.com/in/harshit-gupta-38377117b/" target="_blank"><img class="" src="https://img.icons8.com/color/34/000000/linkedin-circled--v3.png"/></a>
-    <a class="icons" href="https://github.com/harshitg123/" target="_blank"><i class=" fa-2x fab fa-github font-aw"></i></a>
-    <a class="icons" href="https://www.hackerrank.com/harshit_28_sps" target="_blank"><i class="fa-2x fab fa-hackerrank font-aw"></i></a>
-    <a class="icons" href="https://stackoverflow.com/users/15226447/harshit-gupta" target="_blank"><i class=" fa-2x fab fa-stack-overflow"></i></a>
-    <a class="icon" href="https://easyeda.com/harshit.28.sps" target="_blank"> <img class="eda" src="Images/easyeda.png" alt=""> </i></a>
-    <a class="icons" href="https://drive.google.com/file/d/1Cd_bWYADrw6Yz6AnGh2BYwZHkPdoKA3B/view?usp=sharing" target="_blank"><img src="https://img.icons8.com/dotty/34/000000/submit-resume.png"/></a>
-    <p class="copyright">Made with ❤️ by Harshit Gupta.</p>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="app.js" charset="utf-8"></script>
 </body>
 </html>
