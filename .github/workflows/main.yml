@@ -11,10 +11,3 @@ jobs:
 
     env:
       MY_SECRET: ${{ secrets.ACCESS_KEY}}
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Run your JavaScript code
-        run: node app.js
