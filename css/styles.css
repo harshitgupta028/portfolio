@@ -20,6 +20,9 @@
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --validation-color-failed: hsl(0, 100%, 50%);
+  --validation-color-warning: hsl(39, 100%, 50%);
+  --validation-color-success: hsl(147, 50%, 47%);
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -77,6 +80,9 @@ body.dark-theme{
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  --validation-color-failed: hsl(0, 100%, 50%);
+  --validation-color-warning: hsl(39, 100%, 50%);
+  --validation-color-success: hsl(147, 50%, 47%);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -376,6 +382,13 @@ background-color: var(--body-color);
   align-items: center;
 }
 
+.form-submit-button{
+  text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: var(--body-font);
+    font-size: var(--font-medium);
+}
 
 
 /*==================== ABOUT ====================*/
@@ -727,6 +740,39 @@ background-color: var(--body-color);
 ::-webkit-scrollbar-thumb{
   background-color: var(--scroll-thumb-color);
   border-radius: 0.5rem;
+}
+
+/* Email */
+
+.email__validator{
+  color: var(--validation-color-failed);
+}
+
+.form__msg{
+  color: var(--first-color);
+}
+
+.form__validator-success{
+  display: block;
+  color: var(--validation-color-success);
+}
+
+.form__validator-warning{
+  display: block;
+  color: var(--validation-color-warning);
+}
+
+.form__validator-failed{
+  display: block;
+  color: var(--validation-color-failed);
+}
+
+.validator__msg-hide{
+  display: none;
+}
+
+.validator__msg-show{
+  display: block;
 }
 
 /*==================== MEDIA QUERIES ====================*/
