@@ -775,6 +775,13 @@ background-color: var(--body-color);
   display: block;
 }
 
+.form-submit-button[disabled]{
+  opacity: 0.8;
+}
+
+.form-submit-button[disabled]:hover{
+  background-color: var(--first-color);
+}
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 

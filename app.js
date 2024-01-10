@@ -1,5 +1,3 @@
-// ACCESS_KEY
-const accessKey = process.env.MY_SECRET;
 
 const navMenu = document.getElementById("nav-menu"),
       navToggle = document.getElementById("nav-toggle"),
@@ -160,72 +158,74 @@ themeButton.addEventListener('click', () => {
 
 // Form - Send Email
 
-document.getElementById("access-key").setAttribute('value', accessKey);
+// document.getElementById("access-key").setAttribute('value', accessKey);
 
-function ValidateEmail() {
+// function ValidateEmail() {
 
-  var validRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
-  const email = document.getElementById("email").value
+//   var validRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
+//   const email = document.getElementById("email").value
 
-  if (email.match(validRegex)) {
-    return true;
-  } else { 
-    return false;
-  }
-}
+//   if (email.match(validRegex)) {
+//     return true;
+//   } else { 
+//     return false;
+//   }
+// }
 
-const form = document.getElementById('form');
-const result = document.getElementById('form-validator');
-const emailValidator = document.getElementById('email-validator');
+// const form = document.getElementById('form');
+// const result = document.getElementById('form-validator');
+// const emailValidator = document.getElementById('email-validator');
 
 
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-  const formData = new FormData(form);
-  const object = Object.fromEntries(formData);
-  const json = JSON.stringify(object);
+// form.addEventListener('submit', function(e) {
+//   e.preventDefault();
+  // const formData = new FormData(form);
+  // const object = Object.fromEntries(formData);
+  // const json = JSON.stringify(object);
+
+  // result.innerHTML = "Thanks for contacting for will not submit due to expired token you can use the email mentioned to send email"
   
 
-  if(ValidateEmail()){
+  // if(ValidateEmail()){
 
-    result.innerHTML = "Please wait..."
+  //   result.innerHTML = "Please wait..."
     
-    fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: json
-        })
-        .then(async (response) => {
-            let json = await response.json();
-            if (response.status == 200) {
-                result.classList.add("form__validator-success")
-                result.innerHTML = json.message;
-            } else {
-                console.log(response);
-                result.classList.add("form__validator-warning")
-                result.innerHTML = json.message;
-            }
-        })
-        .catch(error => {
-            console.log(error);
-            result.classList.add("form__validator-failed")
-            result.innerHTML = "Something went wrong!";
-        })
-        .then(function() {
-            form.reset();
-            setTimeout(() => {
-                result.classList.add("validator__msg-hide")
-            }, 3000);
-        });
+  //   fetch('https://api.web3forms.com/submit', {
+  //           method: 'POST',
+  //           headers: {
+  //               'Content-Type': 'application/json',
+  //               'Accept': 'application/json'
+  //           },
+  //           body: json
+  //       })
+  //       .then(async (response) => {
+  //           let json = await response.json();
+  //           if (response.status == 200) {
+  //               result.classList.add("form__validator-success")
+  //               result.innerHTML = json.message;
+  //           } else {
+  //               console.log(response);
+  //               result.classList.add("form__validator-warning")
+  //               result.innerHTML = json.message;
+  //           }
+  //       })
+  //       .catch(error => {
+  //           console.log(error);
+  //           result.classList.add("form__validator-failed")
+  //           result.innerHTML = "Something went wrong!";
+  //       })
+  //       .then(function() {
+  //           form.reset();
+  //           setTimeout(() => {
+  //               result.classList.add("validator__msg-hide")
+  //           }, 3000);
+  //       });
 
-      }else{
-        emailValidator.innerHTML = "Please enter valid email!"
-        emailValidator.classList.add("validator__msg-show")
-        setTimeout(() => {
-          emailValidator.classList.remove("validator__msg-show")
-        }, 2000)
-      }
-});
+  // }else{
+  //       emailValidator.innerHTML = "Please enter valid email!"
+  //       emailValidator.classList.add("validator__msg-show")
+  //       setTimeout(() => {
+  //         emailValidator.classList.remove("validator__msg-show")
+  //       }, 2000)
+  // }
+// });
