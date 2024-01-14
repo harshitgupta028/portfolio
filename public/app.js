@@ -166,7 +166,13 @@ const message = document.getElementById('message');
 function sendData(formData){
 
   const showMsg = document.getElementById('info');
+  const loader = document.getElementById('loader');
+
+  loader.classList.remove('uil-message')
+  loader.classList.add('uil-spinner-alt')
+
   showMsg.innerHTML = "Sending email..."
+  
 
   fetch('/', {
     method: 'POST',
@@ -178,6 +184,7 @@ function sendData(formData){
     .then(response => response.json())
     .then(data => {
       console.log("Success:", data);
+
       showMsg.innerHTML = "Email sent succesfully..."
 
       name.value = "",
@@ -187,7 +194,10 @@ function sendData(formData){
       
       setTimeout(() => {
         showMsg.innerHTML = ""
-      }, 3000)
+        loader.classList.remove('uil-spinner-alt')
+        loader.classList.add('uil-message')
+
+      }, 2000)
       
     })
     .catch((error) => {

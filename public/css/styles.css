@@ -358,6 +358,15 @@ background-color: var(--body-color);
   font-size: 1.25rem;
 }
 /*==================== BUTTONS ====================*/
+.button__container{
+  display: flex;
+  align-items: center;
+}
+
+.form__msg{
+  margin-left: var(--mb-2);
+}
+
 .button{
   display: inline-block;
   background-color: var(--first-color);
@@ -782,6 +791,21 @@ background-color: var(--body-color);
 .form-submit-button[disabled]:hover{
   background-color: var(--first-color);
 }
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.uil-spinner-alt {
+  display: inline-block;
+  animation: rotate 2s linear infinite; /* Adjust the duration as needed */
+}
+
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 
