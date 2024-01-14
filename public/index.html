@@ -430,9 +430,7 @@
 
         </div>
 
-        <form method="POST" class="contact__form grid" id="form">
-
-          <input type="hidden" name="access_key" id="access-key" value="">
+        <form method="POST" class="contact__form grid" id="contact-form">
 
           <div class="contact__inputs grid">
             <div class="contact__content">
@@ -441,7 +439,7 @@
             </div>
             <div class="contact__content">
               <label for="" class="contact__label">Email</label>
-              <input type="email" class="contact__input" id="email" name="email" required>
+              <input type="email" class="contact__input" id="sender-email" name="email" required>
             </div>
             <div id="email-validator" class="validator__msg-hide email__validator"></div>
           </div>
@@ -455,11 +453,12 @@
           </div>
 
           <div>
-            <button class="button button--flex form-submit-button" disabled type="submit" id="submit-btn">
+            <button class="button button--flex form-submit-button" type="submit" id="submit-contact-form">
               Send Message <i class="uil uil-message button__icon"></i>
             </button>
           </div>
-          <div id="form-validator" class="form__msg"></div>
+
+          <div id="info" class="form__msg"></div>
         </form>
       </div>
     </section>

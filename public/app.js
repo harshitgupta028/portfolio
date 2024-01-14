@@ -158,74 +158,66 @@ themeButton.addEventListener('click', () => {
 
 // Form - Send Email
 
-// document.getElementById("access-key").setAttribute('value', accessKey);
+const name = document.getElementById('sender-name');
+const email = document.getElementById('sender-email');
+const subject = document.getElementById('subject');
+const message = document.getElementById('message');
 
-// function ValidateEmail() {
+function sendData(formData){
 
-//   var validRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
-//   const email = document.getElementById("email").value
+  const showMsg = document.getElementById('info');
+  showMsg.innerHTML = "Sending email..."
 
-//   if (email.match(validRegex)) {
-//     return true;
-//   } else { 
-//     return false;
-//   }
-// }
+  fetch('/', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({data: formData})
+  })
+    .then(response => response.json())
+    .then(data => {
+      console.log("Success:", data);
+      showMsg.innerHTML = "Email sent succesfully..."
 
-// const form = document.getElementById('form');
-// const result = document.getElementById('form-validator');
-// const emailValidator = document.getElementById('email-validator');
+      name.value = "",
+      email.value = "",
+      subject.value = "",
+      message.value = ""
+      
+      setTimeout(() => {
+        showMsg.innerHTML = ""
+      }, 3000)
+      
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      showMsg.innerHTML = "Could not send email."
 
+      setTimeout(() => {
+        showMsg.innerHTML = ""
+      }, 3000)
+    })
+}
 
-// form.addEventListener('submit', function(e) {
-//   e.preventDefault();
-  // const formData = new FormData(form);
-  // const object = Object.fromEntries(formData);
-  // const json = JSON.stringify(object);
+const button = document.getElementById('contact-form');
 
-  // result.innerHTML = "Thanks for contacting for will not submit due to expired token you can use the email mentioned to send email"
+button.addEventListener('submit', (event) => {
+
+  event.preventDefault();
+
+  // make object
+
+  let formData = {
+    name: name.value,
+    email: email.value,
+    subject: subject.value,
+    message: message.value
+  }
+
+  // console.log(formData);
+
+  sendData(formData);
+
   
-
-  // if(ValidateEmail()){
-
-  //   result.innerHTML = "Please wait..."
-    
-  //   fetch('https://api.web3forms.com/submit', {
-  //           method: 'POST',
-  //           headers: {
-  //               'Content-Type': 'application/json',
-  //               'Accept': 'application/json'
-  //           },
-  //           body: json
-  //       })
-  //       .then(async (response) => {
-  //           let json = await response.json();
-  //           if (response.status == 200) {
-  //               result.classList.add("form__validator-success")
-  //               result.innerHTML = json.message;
-  //           } else {
-  //               console.log(response);
-  //               result.classList.add("form__validator-warning")
-  //               result.innerHTML = json.message;
-  //           }
-  //       })
-  //       .catch(error => {
-  //           console.log(error);
-  //           result.classList.add("form__validator-failed")
-  //           result.innerHTML = "Something went wrong!";
-  //       })
-  //       .then(function() {
-  //           form.reset();
-  //           setTimeout(() => {
-  //               result.classList.add("validator__msg-hide")
-  //           }, 3000);
-  //       });
-
-  // }else{
-  //       emailValidator.innerHTML = "Please enter valid email!"
-  //       emailValidator.classList.add("validator__msg-show")
-  //       setTimeout(() => {
-  //         emailValidator.classList.remove("validator__msg-show")
-  //       }, 2000)
-  // }
-// });
+})
