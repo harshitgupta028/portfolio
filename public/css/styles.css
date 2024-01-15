@@ -486,6 +486,7 @@ background-color: var(--body-color);
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--mb-0-5);
+  font-size: var(--smaller-font-size);
 }
 
 .skills__bar,
@@ -581,6 +582,11 @@ background-color: var(--body-color);
   margin-bottom: var(--mb-1);
 }
 
+.qualification__subtitle__main{
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
 .qualification__calendar{
   font-size: var(--smaller-font-size);
   color: var(--text-color-light)
@@ -612,6 +618,14 @@ background-color: var(--body-color);
 
 .qualification__button.qualification__active{
   color: var(--first-color);
+}
+
+.qualification__experience__list > li {
+  margin-bottom: var(--mb-2);
+}
+
+.qualification__experience__list > li:last-child{
+  margin-bottom: 0;
 }
 
 
@@ -808,7 +822,6 @@ background-color: var(--body-color);
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-
 @media screen and (max-width: 350px) {
   .container{
     margin-left: var(--mb-1);
@@ -836,7 +849,7 @@ background-color: var(--body-color);
   }
 
   .skills__title{
-    font-size: var(--small-font-size);
+    font-size: var(--smaller-font-size);
   }
 
   .qualtifaction__data{
@@ -853,7 +866,6 @@ background-color: var(--body-color);
 }
 
 /* For medium devices */
-
 @media screen and (min-width: 568px) {
   .home__content{
     grid-template-columns: max-content 1fr 1fr;
@@ -881,11 +893,12 @@ background-color: var(--body-color);
 
   .qualification__section{
     display: grid;
-    grid-template-columns: .6fr;
+    grid-template-columns: .9fr;
     justify-content: center;
   }
 }
 
+/* For large devices */
 @media screen and (min-width: 768px) {
   .container{
     margin-left: auto;
@@ -980,7 +993,8 @@ background-color: var(--body-color);
   }
 
   .qualification__tabs{
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-3);
   }
 
   .qualification__button{
@@ -1001,7 +1015,7 @@ background-color: var(--body-color);
   }
 }
 
-/* For large devices */
+/* For X large devices */
 @media screen and (min-width: 1024px) {
   .header,
   .main,
