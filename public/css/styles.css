@@ -516,6 +516,10 @@ background-color: var(--body-color);
   width: 40%;
 }
 
+.skills__bootstrap{
+  width: 70%;
+}
+
 .skills__java{
   width: 60%;
 }
@@ -526,6 +530,14 @@ background-color: var(--body-color);
 
 .skills__python{
   width: 70%;
+}
+
+.skills__node{
+  width: 40%;
+}
+
+.skills__express{
+  width: 60%;
 }
 
 .skills__close .skills__list{
