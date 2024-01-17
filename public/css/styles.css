@@ -554,6 +554,30 @@ background-color: var(--body-color);
   transform: rotate(-180deg);
 }
 
+/*======================= Projects =======================*/
+
+.projects__container{
+  grid-template-columns: 1fr 1fr;
+}
+
+.projects__content{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1rem;
+}
+
+.project__title{
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.project__description{
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  min-height: 10rem;
+  padding: 1rem 0;
+}
+
 /*==================== QUALIFICATION ====================*/
 
 .qualification__tabs{
@@ -1054,5 +1078,39 @@ background-color: var(--body-color);
   .contact__inputs{
     grid-template-columns: repeat(2, 1fr);
   }
+
+}
+
+/* For XX large devices */
+@media screen and (min-width: 1324px) {
+
+  .nav{
+    max-width: 1050px;
+  }
+
+  .container{
+    min-width: 900px;
+  }
+
+  .home__blob{
+    width: 400px;
+  }
+
+  .home__social{
+    transform: translateX(-4.5rem);
+  }
+
+  .services__container{
+    grid-template-columns: repeat(3, 238px); 
+  }
+
+  .contact__form{
+    width: 560px;
+  }
+
+  .contact__inputs{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 
 }
