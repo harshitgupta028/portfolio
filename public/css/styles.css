@@ -571,11 +571,28 @@ background-color: var(--body-color);
   font-weight: var(--font-medium);
 }
 
+.project__skills{
+  margin-top: var(--mb-1);
+  margin-bottom: var(--mb-1);
+}
+
+.project__skill{
+  border: 1px solid var(--first-color);
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+}
+
 .project__description{
   color: var(--text-color);
   font-size: var(--small-font-size);
   min-height: 10rem;
   padding: 1rem 0;
+}
+
+.project__buttons{
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
 }
 
 /*==================== QUALIFICATION ====================*/
@@ -886,6 +903,10 @@ background-color: var(--body-color);
 
   .skills__title{
     font-size: var(--smaller-font-size);
+  }
+
+  .projects__container{
+    grid-template-columns: 1fr;
   }
 
   .qualtifaction__data{
