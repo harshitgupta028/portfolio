@@ -574,6 +574,9 @@ background-color: var(--body-color);
 .project__skills{
   margin-top: var(--mb-1);
   margin-bottom: var(--mb-1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .project__skill{
@@ -906,19 +909,19 @@ background-color: var(--body-color);
   }
 
   .projects__container{
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
+  }
+
+  .project__description{
+    min-height: 15rem;
   }
 
   .qualtifaction__data{
     gap: .4rem;
   }
 
-  .qualification__title{
-    font-size: var(--small-font-size);
-  }
-
   .qualification__subtitle{
-    font-size: var(--smaller-font-size);
+    font-size: var(--small-font-size);
   }
 }
 
