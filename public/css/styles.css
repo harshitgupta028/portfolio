@@ -559,7 +559,7 @@ background-color: var(--body-color);
 /*======================= Projects =======================*/
 
 .projects__container{
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
 }
 
 .projects__content{
@@ -595,14 +595,13 @@ background-color: var(--body-color);
 .project__description{
   color: var(--text-color);
   font-size: var(--small-font-size);
-  min-height: 10rem;
   padding: 1rem 0;
 }
 
 .project__buttons{
-  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
+  margin-top: var(--mb-1);
 }
 
 /*==================== QUALIFICATION ====================*/
@@ -920,7 +919,11 @@ background-color: var(--body-color);
   }
 
   .project__description{
-    min-height: 15rem;
+    padding: 1rem 0;
+  }
+
+  .project__buttons{
+    margin-top: var(--mb-1);
   }
 
   .qualtifaction__data{
@@ -949,6 +952,10 @@ background-color: var(--body-color);
 
   .skills__title{
     font-size: var(--small-font-size);
+  }
+
+  .projects__container{
+    grid-template-columns: 100%;
   }
 
   .about__container,
@@ -1057,6 +1064,10 @@ background-color: var(--body-color);
 
   .about__buttons{
     justify-content: initial;
+  }
+
+  .projects__container{
+    grid-template-columns: 1fr 1fr;
   }
 
   .qualification__tabs{
