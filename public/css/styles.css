@@ -19,6 +19,7 @@
   --body-color: hsl(var(--hue-color), 60%, 99%);
   --container-color: #fff;
   --cards-color: #FBFBFE;
+  --footer-color: #ffffffad;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
   --validation-color-failed: hsl(0, 100%, 50%);
@@ -779,8 +780,19 @@ background-color: var(--body-color);
 .footer__rights{
   font-size: var(--smaller-font-size);
   text-align: center;
-  color: var(--text-color-light);
+  color: var(--footer-color);
   margin-top: var(--mb-3);
+}
+
+.footer__rights__credit{
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  color: var(--footer-color);
+  text-decoration: none;
+}
+
+.footer__developed{
+  margin-top: var(--mb-1);
 }
 
 .footer__title,
