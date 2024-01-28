@@ -448,6 +448,21 @@ background-color: var(--body-color);
   row-gap: 0;
 }
 
+.skillcloud{
+  color: var(--first-color);
+  display: inline-block;
+  /* top: 100px; */
+  /* left: 32%; */
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-family: var(--body-font);
+}
+
+.skill__cloud{
+  justify-content: center;
+}
+
 .skills__header{
   display: flex;
   justify-content: center;
