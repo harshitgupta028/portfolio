@@ -164,15 +164,28 @@ const Texts = [
     "Bootstrap", "Python", "Node", "Express"
     ];
 
+let radius = 220
+if(window.innerWidth < 900){
+  radius = 160
+} else if (window.innerWidth > 1000 && window.innerWidth < 1200) {
+  radius = 180
+} else if(window.innerWidth > 1200 && window.innerWidth < 1400){
+  radius = 200
+}else(
+  radius = 220
+)
+
 const Options = {
-    radius: 300,
-    maxSpeed: 'normal',
+
+    radius: radius,
+    maxSpeed: 'fast',
     initSpeed: 'fast',
     direction: 135,
     keep: false ,
     itemClass: 'skills-item',
     containerClass: "skillcloud",
     useContainerInlineStyles: true,
+    useItemInlineStyles: true,
     useHTML: true
 }
 

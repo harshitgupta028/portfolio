@@ -451,8 +451,7 @@ background-color: var(--body-color);
 .skillcloud{
   color: var(--first-color);
   display: inline-block;
-  /* top: 100px; */
-  /* left: 32%; */
+  left: 20%;
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 20px;
@@ -460,7 +459,7 @@ background-color: var(--body-color);
 }
 
 .skill__cloud{
-  justify-content: center;
+  justify-content: end;
 }
 
 .skills__header{
@@ -941,6 +940,10 @@ background-color: var(--body-color);
     font-size: var(--smaller-font-size);
   }
 
+  .skill__cloud{
+    display: none;
+  }
+
   .projects__container{
     grid-template-columns: 100%;
   }
@@ -981,12 +984,15 @@ background-color: var(--body-color);
     font-size: var(--small-font-size);
   }
 
+  .skill__cloud{
+    display: none;
+  }
+
   .projects__container{
     grid-template-columns: 100%;
   }
 
   .about__container,
-  .skills__container,
   .contact__container,
   .footer__container{
     grid-template-columns: repeat(2, 1fr);
@@ -1026,6 +1032,10 @@ background-color: var(--body-color);
   .main,
   .footer__container{
     padding: 0 1rem;
+  }
+
+  .skills__container{
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .nav{
@@ -1093,6 +1103,14 @@ background-color: var(--body-color);
     justify-content: initial;
   }
 
+  .skill__cloud{
+    display: block;
+  }
+
+  .skillcloud{
+    left: 10%;
+  }
+
   .projects__container{
     grid-template-columns: 1fr 1fr;
   }
@@ -1136,6 +1154,14 @@ background-color: var(--body-color);
     transform: translateX(-6rem);
   }
 
+  .skill__cloud{
+    display: block;
+  }
+
+  .skillcloud{
+    left: 15%;
+  }
+
   .services__container{
     grid-template-columns: repeat(3, 238px); 
   }
@@ -1167,6 +1193,14 @@ background-color: var(--body-color);
 
   .home__social{
     transform: translateX(-4.5rem);
+  }
+
+  .skill__cloud{
+    display: block;
+  }
+
+  .skillcloud{
+    left: 20%;
   }
 
   .services__container{
