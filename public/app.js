@@ -155,6 +155,42 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('active-theme', checkActivetheme())
 })
 
+// Skill cloud.
+const skillSphere = document.querySelector('.skill__cloud');
+
+const Texts = [
+    "HTML", "CSS" , "Javascript" , 
+    "Java", "SpringBoot", "Xquery",
+    "Bootstrap", "Python", "Node", "Express"
+    ];
+
+let radius = 220
+if(window.innerWidth < 900){
+  radius = 160
+} else if (window.innerWidth > 1000 && window.innerWidth < 1200) {
+  radius = 180
+} else if(window.innerWidth > 1200 && window.innerWidth < 1400){
+  radius = 200
+}else(
+  radius = 220
+)
+
+const Options = {
+
+    radius: radius,
+    maxSpeed: 'fast',
+    initSpeed: 'fast',
+    direction: 135,
+    keep: false ,
+    itemClass: 'skills-item',
+    containerClass: "skillcloud",
+    useContainerInlineStyles: true,
+    useItemInlineStyles: true,
+    useHTML: true
+}
+
+var tagCloud = TagCloud(skillSphere, Texts, Options);
+
 
 // Form - Send Email
 
