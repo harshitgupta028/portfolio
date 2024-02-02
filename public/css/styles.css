@@ -459,7 +459,7 @@ background-color: var(--body-color);
 }
 
 .skill__cloud{
-  justify-content: end;
+  display: none;
 }
 
 .skills__header{
@@ -1104,7 +1104,7 @@ background-color: var(--body-color);
   }
 
   .skill__cloud{
-    display: block;
+    display: inline-block;
   }
 
   .skillcloud{
@@ -1154,10 +1154,6 @@ background-color: var(--body-color);
     transform: translateX(-6rem);
   }
 
-  .skill__cloud{
-    display: block;
-  }
-
   .skillcloud{
     left: 15%;
   }
@@ -1193,10 +1189,6 @@ background-color: var(--body-color);
 
   .home__social{
     transform: translateX(-4.5rem);
-  }
-
-  .skill__cloud{
-    display: block;
   }
 
   .skillcloud{
