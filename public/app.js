@@ -233,7 +233,7 @@ function sendData(formData){
         loader.classList.remove('uil-spinner-alt')
         loader.classList.add('uil-message')
 
-      }, 2000)
+      }, 500)
       
     })
     .catch((error) => {
@@ -242,7 +242,7 @@ function sendData(formData){
 
       setTimeout(() => {
         showMsg.innerHTML = ""
-      }, 3000)
+      }, 2000)
     })
 }
 
