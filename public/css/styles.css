@@ -295,7 +295,6 @@ background-color: var(--body-color);
   justify-content: center;
   padding: 0.5em;
   border-radius: 5em;
-  z-index: 0;
   gap: 2em;
 }
 
@@ -487,12 +486,13 @@ background-color: var(--body-color);
 
 .home__scroll{
   display: none;
-  z-index: 1;
 }
 
 .home__scroll-button{
   color: var(--first-color);
   transition: .3s;
+  position: relative;
+  z-index: 1;
 }
 
 .home__scroll-button:hover{
