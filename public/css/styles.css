@@ -25,6 +25,7 @@
   --validation-color-failed: hsl(0, 100%, 50%);
   --validation-color-warning: hsl(39, 100%, 50%);
   --validation-color-success: hsl(147, 50%, 47%);
+  --status-nav-color: hsla(var(--hue-color), 69%, 85%, 0.2);
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -86,6 +87,11 @@ body.dark-theme{
   --validation-color-failed: hsl(0, 100%, 50%);
   --validation-color-warning: hsl(39, 100%, 50%);
   --validation-color-success: hsl(147, 50%, 47%);
+  --status-nav-color: hsla(var(--hue-color), 69%, 85%, 0.2);
+}
+
+.show{
+  display: contents;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -262,6 +268,152 @@ background-color: var(--body-color);
   color: var(--first-color-alt);
 }
 
+.status_nav_container{
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  bottom: 1.5em;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: none;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.status_nav_content{
+  background-color: var(--status-nav-color);
+  -webkit-backdrop-filter: blur(11px);
+  backdrop-filter: blur(11px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+  border-radius: 5em;
+  z-index: 0;
+  gap: 2em;
+}
+
+.pulse_container{
+  display: flex;
+  background-color: var(--container-color);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  padding: 0.5em 0.6em 0.5em 0.8em;
+  border-radius: 5em;
+  z-index: 0;
+  margin-right: var(--mb-2);
+}
+
+.pulse{
+  height: 15px;
+  width: 15px;
+  background-color: #21A30D;
+  border-radius: 50%;
+  position: relative;
+  margin: auto;
+  top: 0;
+}
+
+.pulse_status{
+  margin-left: var(--mb-0-75);
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+}
+
+.lets_connect{
+  margin-right: var(--mb-0-75);
+}
+
+.pulse::before,
+.pulse::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #21A30D;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.pulse::before{
+  animation: pulse 2s ease-out infinite;
+}
+
+.pulse::after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+
+.status-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.status_nav_container-nav{
+  display: contents;
+}
+
+.pulse_container-nav{
+  display: flex;
+  background-color: var(--container-color);
+  background-color: var(--status-nav-color);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  padding: 0.3em 0.5em 0.3em 0.7em;
+  border-radius: 5em;
+  z-index: 0;
+}
+
+.pulse-nav{
+  height: 10px;
+  width: 10px;
+  background-color: #21A30D;
+  border-radius: 50%;
+  position: relative;
+  margin: auto;
+  top: 0;
+}
+
+.pulse_status-nav{
+  margin-left: var(--mb-0-75);
+  font-size: var(--smaller-font-size);
+  color: var(--title-color);
+}
+
+.pulse-nav::before,
+.pulse-nav::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #21A30D;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.pulse-nav::before{
+  animation: pulse 2s ease-out infinite;
+}
+
+.pulse-nav::after{
+  animation: pulse 2s 1s ease-out infinite;
+}
+
+@keyframes pulse {
+  100%{
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+
 /* show menu */
 
 .show-menu{
@@ -335,6 +487,7 @@ background-color: var(--body-color);
 
 .home__scroll{
   display: none;
+  z-index: 1;
 }
 
 .home__scroll-button{
@@ -967,6 +1120,7 @@ background-color: var(--body-color);
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
+
   .home__content{
     grid-template-columns: max-content 1fr 1fr;
   }
@@ -1056,6 +1210,21 @@ background-color: var(--body-color);
 
   .nav__menu{
     margin-left: auto;
+  }
+
+  .status_nav_container{
+    display: flex;
+    animation: fadeIn 1s;
+  }
+
+  .status_nav_container-nav{
+    display: none;
+    animation: fadeIn 1s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
   }
 
   .change-theme{

@@ -119,6 +119,24 @@ function scrollUp(){
 window.addEventListener("scroll", scrollUp)
 
 
+// Hide status nav
+
+function hideStatusNav(){
+  const statusNav = document.getElementById("status-nav-container")
+  const statusOnNav = document.getElementById("status-nav-container-nav")
+
+  if (this.scrollY > 4099) {
+    statusNav.classList.remove("status_nav_container")
+    statusOnNav.classList.remove("status_nav_container-nav")
+  }else{
+    statusNav.classList.add("status_nav_container")
+    statusOnNav.classList.add("status_nav_container-nav")
+  }
+}
+
+window.addEventListener("scroll", hideStatusNav)
+
+
 // Dark theme
 
 const themeButton = document.getElementById("theme-button")
