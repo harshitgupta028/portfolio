@@ -225,7 +225,7 @@ function sendData(formData){
   loader.classList.remove('uil-message')
   loader.classList.add('uil-spinner-alt')
 
-  showMsg.innerHTML = "Sending email..."
+  showMsg.innerHTML = ""
   
 
   fetch('/', {
@@ -239,12 +239,14 @@ function sendData(formData){
     .then(data => {
       console.log("Success:", data);
 
-      showMsg.innerHTML = "Email sent succesfully..."
+      showMsg.innerHTML = ""
 
       name.value = "",
       email.value = "",
       subject.value = "",
       message.value = ""
+
+      alert("Email sent successfully! \n\nYou will here from me if you have entered correct email in the contact form.")
       
       setTimeout(() => {
         showMsg.innerHTML = ""
