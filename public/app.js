@@ -178,8 +178,8 @@ const skillSphere = document.querySelector('.skill__cloud');
 
 const Texts = [
     "HTML", "CSS" , "Javascript" , 
-    "Java", "SpringBoot", "Xquery",
-    "Bootstrap", "Python", "Node", "Express"
+    "Java", "SpringBoot", "Azure",
+    "Bootstrap", "Python", "Node", "Express", "AWS",
     ];
 
 let radius = 220
