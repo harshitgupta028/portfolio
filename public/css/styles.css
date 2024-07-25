@@ -680,6 +680,10 @@ img {
   background-color: var(--first-color);
 }
 
+.skills__react {
+  width: 60%;
+}
+
 .skills__html {
   width: 80%;
 }
@@ -697,7 +701,7 @@ img {
 }
 
 .skills__js {
-  width: 40%;
+  width: 60%;
 }
 
 .skills__bootstrap {

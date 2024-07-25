@@ -177,7 +177,7 @@ themeButton.addEventListener('click', () => {
 const skillSphere = document.querySelector('.skill__cloud');
 
 const Texts = [
-    "HTML", "CSS" , "Javascript" , 
+    "React.JS", "HTML", "CSS" , "Javascript" , 
     "Java", "SpringBoot", "Azure",
     "Bootstrap", "Python", "Node", "Express", "AWS",
     ];
