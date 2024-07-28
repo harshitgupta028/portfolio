@@ -1,6 +1,6 @@
-# Contributing to Harshit's Portfolio
+# Contributing to Portfolio
 
-To contribute to this project, I'd like you to please follow the steps outlined below to raise a pull request with your changes. I will review the changes and merge them if they are appropriate and relevant. 
+To contribute to this project, I'd like you to please follow the steps outlined below to raise a pull request with your changes. I will review the changes and merge them if they are appropriate and relevant.
 
 ## Forking a repository
 
@@ -8,12 +8,11 @@ To contribute to this project, I'd like you to please follow the steps outlined 
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/064bf2ee-dd96-4c13-b4d4-71309d6ad4d7">
 
-
 ## Cloning a fork
 
 <p>You've successfully forked the portfolio repository, but so far, it only exists on GitHub. To be able to work on the project, you will need to clone it to your computer.</p>
 
-1. Click on <code> <> Code </code> 
+1. Click on <code> <> Code </code>
 2. Now click on the copy icon
 
 ![image](https://github.com/user-attachments/assets/f535ffac-336a-4d7f-9335-c3544d85b25e)
@@ -68,7 +67,6 @@ To do so, head on over to the repository on GitHub where your project lives. For
 GitHub will bring you to a page that shows the differences between your fork and the <code>harshit/portfolio</code> repository. Click Create pull request.
 
 GitHub will bring you to a page where you can enter a title and a description of your changes. It's important to provide as much useful information and a rationale for why you're making this pull request in the first place. 
-
 So that I will be able to the proper details for your changes so while reviewing the code its easy for me to do.
 
 Finally, click Create pull request.
