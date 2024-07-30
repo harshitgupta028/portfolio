@@ -790,6 +790,11 @@ img {
   margin-top: var(--mb-1);
 }
 
+.robotic-view{
+  position: relative;
+  top: -1rem; /* Move the div upwards */
+}
+
 /*==================== QUALIFICATION ====================*/
 
 .qualification__tabs {
