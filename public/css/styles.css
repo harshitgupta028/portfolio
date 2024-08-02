@@ -761,7 +761,8 @@ img {
 }
 
 .project__skills__Container {
-  min-height: 3.5rem;
+  /* min-height: 3.5rem; */
+  height: 4rem;
 }
 
 .project__skills {
@@ -782,6 +783,7 @@ img {
   color: var(--text-color);
   font-size: var(--small-font-size);
   padding: 1rem 0;
+  height: 10rem;
 }
 
 .project__buttons {
@@ -789,6 +791,7 @@ img {
   gap: 1rem;
   margin-top: var(--mb-1);
 }
+
 
 /*==================== QUALIFICATION ====================*/
 
