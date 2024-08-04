@@ -807,7 +807,6 @@ img {
 .qualification__button:hover {
   color: var(--first-color);
 }
-
 .qualification__icon {
   font-size: 1.8rem;
   margin-right: var(--mb-0-25);
