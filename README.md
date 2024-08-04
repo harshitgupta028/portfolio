@@ -31,6 +31,7 @@ Before making changes to the project, you should create a new branch and check i
 ```bash
 git branch BRANCH-NAME
 ```
+
 ```bash
 git checkout BRANCH-NAME
 ```
@@ -44,6 +45,7 @@ When you're ready to submit your changes, stage and commit your changes. <code>g
 ```bash
 git add .
 ```
+
 ```bash
 git commit -m "a short description of the change"
 ```
@@ -58,7 +60,7 @@ git push
 
 ## Making a pull request
 
-At last, you're ready to propose changes to the main project! 
+At last, you're ready to propose changes to the main project!
 
 This is the final step in producing a fork of someone else's project in this case its <code>harshit:portfolio</code>, and arguably the most important. If you've made a change that you feel would benefit the community as a whole, you should consider contributing back.
 
@@ -66,7 +68,7 @@ To do so, head on over to the repository on GitHub where your project lives. For
 
 GitHub will bring you to a page that shows the differences between your fork and the <code>harshit/portfolio</code> repository. Click Create pull request.
 
-GitHub will bring you to a page where you can enter a title and a description of your changes. It's important to provide as much useful information and a rationale for why you're making this pull request in the first place. 
+GitHub will bring you to a page where you can enter a title and a description of your changes. It's important to provide as much useful information and a rationale for why you're making this pull request in the first place.
 So that I will be able to the proper details for your changes so while reviewing the code its easy for me to do.
 
 Finally, click Create pull request.
