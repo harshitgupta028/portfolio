@@ -713,15 +713,15 @@ img {
 }
 
 .skills__spring-boot {
-  width: 50%;
+  width: 60%;
 }
 
 .skills__python {
   width: 70%;
 }
 
-.skills__node {
-  width: 40%;
+.skills__fastapi {
+  width: 70%;
 }
 
 .skills__express {
@@ -791,7 +791,6 @@ img {
   gap: 1rem;
   margin-top: var(--mb-1);
 }
-
 
 /*==================== QUALIFICATION ====================*/
 
