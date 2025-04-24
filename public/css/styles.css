@@ -871,7 +871,7 @@ img {
 }
 
 .qualification__experience__list > li {
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-1);
 }
 
 .qualification__experience__list > li:last-child {
